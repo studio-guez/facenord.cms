@@ -1,0 +1,22 @@
+title: Tags
+icon: tag
+num: 0
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+
+columns:
+  main:
+    width: 1/1
+    sections:
+      tags:
+        type: pages
+        headline: Tags
+        template: tag
+        layout: list
+        status: all
+        sortable: true

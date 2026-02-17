@@ -1,0 +1,11 @@
+title: Site
+
+sections:
+  pages:
+    type: pages
+    templates:
+      - projects
+  tags:
+    type: pages
+    template:
+      - tags

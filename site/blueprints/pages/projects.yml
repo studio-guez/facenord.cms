@@ -1,0 +1,14 @@
+title: Projects
+
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTemplate: false
+  delete: false
+  duplicate: false
+
+sections:
+  pages:
+    type: pages
+    templates:
+      - project
