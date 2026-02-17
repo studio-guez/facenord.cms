@@ -1,0 +1,29 @@
+label: Profiles
+wysiwyg: true
+preview: fields
+fields:
+  image_cover:
+    label: Image de couverture
+    type: files
+    uploads:
+      accept: image/*
+    max: 1
+    min: 1
+    required: true
+    layout: cards
+    image:
+      back: black
+    size: huge
+    width: 1/2
+  first_name:
+    label: prénom
+    type: text
+  last_name:
+    label: nom
+    type: text
+  function:
+    label: fonction
+    type: text
+  roles:
+    label: Rôles
+    type: list
