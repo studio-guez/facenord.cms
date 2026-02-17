@@ -1,0 +1,28 @@
+label: Cartes
+wysiwyg: true
+preview: fields
+name: Cards
+icon: grid
+fields:
+  titre:
+    label: Titre
+    type: text
+  style:
+    label: style
+    type: select
+    options:
+      light: blanc
+      color: de couleur
+  cards:
+    label: Cards
+    type: structure
+    fields:
+      text:
+        label: Text
+        type: writer
+        inline: true
+        marks:
+          - italic
+      baseline:
+        label: baseline
+        type: text

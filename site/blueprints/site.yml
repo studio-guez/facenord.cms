@@ -1,11 +1,29 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
-    templates:
-      - projects
-  tags:
-    type: pages
-    template:
-      - tags
+
+columns:
+  - width: 1/3
+    sections:
+      tags:
+        label: Les tags
+        type: pages
+        template:
+          - tags
+        status: listed
+      projects:
+        label: Les projets
+        layout: cards
+        type: pages
+        status: listed
+        templates:
+          - projects
+
+  - width: 2/3
+    sections:
+      pages:
+        label: Autre pages
+        layout: cards
+        type: pages
+        templates:
+          - default
+

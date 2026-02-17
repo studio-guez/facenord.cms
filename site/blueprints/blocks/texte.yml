@@ -1,0 +1,16 @@
+wysiwyg: true
+preview: fields
+fields:
+  titre:
+    label: Titre
+    type: text
+  text:
+    type: writer
+    nodes:
+      - paragraph
+      - bulletList
+      - orderedList
+    marks:
+      - bold
+      - italic
+      - link

@@ -1,0 +1,12 @@
+label: Podcast Spotify
+icon: audio
+preview: fields
+wysiwyg: true
+fields:
+  titre:
+    label: Titre
+    type: text
+  spotify_url:
+    label: URL Spotify
+    type: url
+    placeholder: https://open.spotify.com/episode/...

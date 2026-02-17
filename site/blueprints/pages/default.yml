@@ -1,0 +1,17 @@
+title: Project
+
+status:
+  draft: Brouillon
+  listed: En ligne
+
+fields:
+  content:
+    label: Contenu
+    type: blocks
+    fieldsets:
+      - texte
+      - gallery
+      - podcast
+      - video
+      - cards
+      - article_heading

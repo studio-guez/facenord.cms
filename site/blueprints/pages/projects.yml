@@ -10,5 +10,6 @@ options:
 sections:
   pages:
     type: pages
+    layout: cards
     templates:
       - project

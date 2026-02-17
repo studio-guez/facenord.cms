@@ -1,0 +1,34 @@
+label: Galerie
+preview: fields
+wysiwyg: true
+fields:
+  titre:
+    label: Titre
+    type: text
+  images:
+    label: 'images'
+    type: files
+    query: model.images
+    multiple: true
+    min: 2
+    layout: cards
+    size: small
+    uploads:
+      template: blocks/image
+  caption:
+    label: Légende
+    type: writer
+    inline: true
+    marks:
+      - bold
+      - italic
+      - link
+  credits:
+    width: 2/3
+    label: crédits
+    type: writer
+    inline: true
+    marks:
+      - bold
+      - italic
+      - link
