@@ -96,9 +96,9 @@ class ComposerStaticInitda1c3a8eb3e9e3b252ad405f32a3f585
         ),
         'Kirby\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/site/plugins/kql/tests',
-            1 => __DIR__ . '/../..' . '/kirby/src',
-            2 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            0 => __DIR__ . '/../..' . '/kirby/src',
+            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            2 => __DIR__ . '/../..' . '/site/plugins/kql/tests',
         ),
         'Composer\\Semver\\' => 
         array (
