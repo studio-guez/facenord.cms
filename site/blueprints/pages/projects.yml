@@ -9,7 +9,11 @@ options:
 
 sections:
   pages:
+    label: Liste des projets
     type: pages
     layout: cards
+    image:
+      query: page.image_cover.toFile
+      back: black
     templates:
       - project

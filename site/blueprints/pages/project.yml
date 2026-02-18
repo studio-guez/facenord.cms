@@ -48,7 +48,7 @@ fields:
     label: Contenu
     type: blocks
     fieldsets:
-      - texte
+      - text
       - gallery
       - podcast
       - video

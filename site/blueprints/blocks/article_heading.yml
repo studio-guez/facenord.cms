@@ -1,4 +1,4 @@
-label: En-tete d'article
+name: En-tete d'article
 wysiwyg: true
 preview: fields
 fields:
@@ -6,6 +6,7 @@ fields:
     label: Titre
     type: text
   text:
+    label: Texte
     type: writer
     nodes:
       - paragraph

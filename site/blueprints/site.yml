@@ -10,6 +10,9 @@ columns:
         template:
           - tags
         status: listed
+        image:
+          back: white
+          query: false
       projects:
         label: Les projets
         layout: cards
@@ -17,6 +20,9 @@ columns:
         status: listed
         templates:
           - projects
+        image:
+          back: white
+          query: false
 
   - width: 2/3
     sections:
@@ -26,4 +32,7 @@ columns:
         type: pages
         templates:
           - default
+        image:
+          back: white
+          query: false
 

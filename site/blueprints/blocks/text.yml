@@ -1,3 +1,4 @@
+name: Texte
 wysiwyg: true
 preview: fields
 fields:
@@ -5,6 +6,7 @@ fields:
     label: Titre
     type: text
   text:
+    label: Texte
     type: writer
     nodes:
       - paragraph
