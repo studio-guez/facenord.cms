@@ -1,7 +1,6 @@
-label: Cartes
+name: Cartes
 wysiwyg: true
 preview: fields
-name: Cards
 icon: grid
 fields:
   titre:

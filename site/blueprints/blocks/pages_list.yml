@@ -1,0 +1,15 @@
+name: Liste de pages
+wysiwyg: true
+preview: fields
+fields:
+  titre:
+    label: Titre
+    type: text
+
+  pages_liste:
+    label: Projet·s à afficher {{page.template}}
+    type: pages
+    query: site.index.filterBy('intendedTemplate', 'project')
+    multiple: true
+    layout: list
+    width: 1/2

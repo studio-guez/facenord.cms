@@ -1,0 +1,40 @@
+name: Plan
+icon: map
+preview: fields
+wysiwyg: true
+fields:
+  titre:
+    label: Titre
+    type: text
+  text:
+    label: Texte
+    type: writer
+    nodes:
+      - paragraph
+      - bulletList
+      - orderedList
+    marks:
+      - bold
+      - italic
+      - link
+  map_link:
+    label: Lien plan externe
+    type: url
+    width: 1/2
+  button_text:
+    label: Texte du bouton
+    type: text
+    width: 1/2
+  image_cover:
+    label: Image de couverture
+    type: files
+    uploads:
+      accept: image/*
+    max: 1
+    min: 1
+    required: true
+    layout: cards
+    image:
+      back: black
+    size: huge
+    width: 1/2
