@@ -1,0 +1,19 @@
+title: Home
+
+tabs:
+  page:
+    fields:
+      header_headline:
+        type: headline
+        label: En-tête du site
+      header_color: fields/color
+      header: fields/text
+      content_headline:
+        type: headline
+        label: Home
+      sections: fields/layout
+  children:
+    label: Sous-pages
+    sections:
+      pages: 
+        template: default

@@ -28,6 +28,7 @@ fields:
     options:
       type: query
       query: site.find('tags').children
+      value: "{{ page.title }}"
     multiple: true
     width: 1/2
 
