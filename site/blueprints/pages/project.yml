@@ -42,10 +42,12 @@ fields:
     type: writer
     nodes:
       - paragraph
+      - bulletList
+      - orderedList
     marks:
+      - bold
       - italic
       - link
-
   content:
     label: Contenu
     type: blocks
