@@ -24,10 +24,11 @@ fields:
 
   tags:
     label: Type de projet
-    type: pages
-    query: site.find('tags').children
+    type: tags
+    options:
+      type: query
+      query: site.find('tags').children
     multiple: true
-    layout: list
     width: 1/2
 
 
