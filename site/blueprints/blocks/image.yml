@@ -1,0 +1,19 @@
+name: Image
+wysiwyg: true
+preview: fields
+icon: image
+fields:
+  image:
+    label: Image
+    type: files
+    uploads:
+      template: blocks/image
+    query: model.images
+    max: 1
+    min: 1
+    required: true
+    layout: cards
+    image:
+      back: black
+    size: huge
+    width: 1/2

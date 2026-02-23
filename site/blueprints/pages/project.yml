@@ -53,6 +53,7 @@ fields:
     type: blocks
     fieldsets:
       - text
+      - image
       - gallery
       - podcast
       - video
