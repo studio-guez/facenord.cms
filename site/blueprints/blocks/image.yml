@@ -17,3 +17,20 @@ fields:
       back: black
     size: huge
     width: 1/2
+  caption:
+    label: Légende
+    type: writer
+    inline: true
+    marks:
+      - bold
+      - italic
+      - link
+  credits:
+    width: 2/3
+    label: crédits
+    type: writer
+    inline: true
+    marks:
+      - bold
+      - italic
+      - link
