@@ -29,6 +29,9 @@ return [
     'resolvers' => [
       'text:titre' => $smart,
       'text:text' => $smart
+    ],
+    'files' => [
+      'gallery' => ['images'],
     ]
   ]
 ];
