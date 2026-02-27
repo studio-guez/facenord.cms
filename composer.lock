@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00e852c3a81bd521a67815e850a10727",
+    "content-hash": "af31b95dd4a790f0222dd2033ef09754",
     "packages": [
         {
             "name": "christian-riesen/base32",
@@ -480,6 +480,59 @@
                 }
             ],
             "time": "2025-07-03T10:26:56+00:00"
+        },
+        {
+            "name": "johannschopplich/kirby-headless",
+            "version": "6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johannschopplich/kirby-headless.git",
+                "reference": "a1bbf293aee7565c0d3242e3573416c2e965a3be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-headless/zipball/a1bbf293aee7565c0d3242e3573416c2e965a3be",
+                "reference": "a1bbf293aee7565c0d3242e3573416c2e965a3be",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1"
+            },
+            "require-dev": {
+                "getkirby/cms": "^5"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": false
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Johann Schopplich",
+                    "email": "hello@johannschopplich.com",
+                    "homepage": "https://johannschopplich.com"
+                }
+            ],
+            "description": "Kirby CMS plugin to enable headless mode",
+            "homepage": "https://kirby.tools/docs/headless",
+            "keywords": [
+                "headless",
+                "kirby"
+            ],
+            "support": {
+                "issues": "https://github.com/johannschopplich/kirby-headless/issues",
+                "source": "https://github.com/johannschopplich/kirby-headless/tree/v6.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/jschopplich",
+                    "type": "custom"
+                }
+            ],
+            "time": "2026-01-21T07:11:47+00:00"
         },
         {
             "name": "laminas/laminas-escaper",

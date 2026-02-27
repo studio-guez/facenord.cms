@@ -1,4 +1,8 @@
 <?php
+use Kirby\Cms\Block;
+use Kirby\Content\Field;
+
+$smart = fn (Field $field, Block $block) => $field->smartypants()->value();
 
 return [
 
@@ -8,11 +12,11 @@ return [
     'allowInsecure' => true      // ✅ accepte HTTP
   ],
   'kql' => [
-    'auth' => false,             // ✅ KQL sans login
+    'auth' => false,
+  ],          // ✅ KQL sans login
 //    'intercept' => function ($type, $key, $value) {
 //      return true;  // Autorise TOUT en mode dev
 //    }
-  ],
   'routes' => [
     [
       'pattern' => '/',
@@ -20,5 +24,11 @@ return [
         go('/panel');
       }
     ],
+  ],
+  'blocksResolver' => [
+    'resolvers' => [
+      'text:titre' => $smart,
+      'text:text' => $smart
+    ]
   ]
 ];
