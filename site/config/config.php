@@ -5,7 +5,6 @@ use Kirby\Content\Field;
 $smart = fn (Field $field, Block $block) => $field->smartypants()->value();
 
 return [
-
 	'debug' => true,
 	'api' => [
 		'basicAuth' => false,        // ❌ désactive l'auth
@@ -26,6 +25,16 @@ return [
 		],
 	],
 	'blocksResolver' => [
+		'defaultResolvers' => [
+			'files' => fn (\Kirby\Cms\File $file) => [
+				'url' => $file->url(),
+				'width' => $file->width(),
+				'height' => $file->height(),
+				'srcset' => $file->srcset(),
+				'alt' => $file->alt()->value(),
+				'focus' =>$file->focus()->value()
+			]
+		],
 		'resolvers' => [
 			'text:titre' => $smart,
 			'text:text' => $smart,
@@ -43,7 +52,8 @@ return [
 								'width' => $image->width(),
 								'height' => $image->height(),
 								'srcset' => $image->srcset(),
-								'alt' => $image->alt()->value()
+								'alt' => $image->alt()->value(),
+								'focus' => $image->focus()->value()
 							] : null
 					];
 				})->values();
@@ -51,6 +61,7 @@ return [
 		],
 		'files' => [
 			'gallery' => ['images'],
-		]
-	]
+			'image' => ['image']
+		],
+	],
 ];
