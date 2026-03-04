@@ -3,9 +3,6 @@ icon: map
 preview: fields
 wysiwyg: true
 fields:
-  titre:
-    label: Titre
-    type: text
   text:
     label: Texte
     type: writer
