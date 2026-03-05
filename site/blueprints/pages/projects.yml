@@ -6,6 +6,7 @@ options:
   changeTemplate: false
   delete: false
   duplicate: false
+  preview: "https://facenord.max-esnee.com/projets"
 
 sections:
   pages:

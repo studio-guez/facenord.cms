@@ -1,4 +1,6 @@
 title: Project
+options:
+  preview: "https://facenord.max-esnee.com/projets/{{page.slug}}"
 
 fields:
   caption:

@@ -1,4 +1,6 @@
-title: Project
+title: Page
+options:
+  preview: "https://facenord.max-esnee.com/{{ page.uri }}"
 
 status:
   draft: Brouillon
