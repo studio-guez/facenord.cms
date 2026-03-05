@@ -1,0 +1,23 @@
+title: Page
+options:
+  preview: "https://facenord.max-esnee.com/{{ page.uri }}"
+
+status:
+  draft: Brouillon
+  listed: En ligne
+
+fields:
+  content:
+    label: Contenu
+    type: blocks
+    fieldsets:
+      - text
+      - image
+      - gallery
+      - podcast
+      - video
+      - cards
+      - article_heading
+      - profiles
+      - map
+      - pages_list

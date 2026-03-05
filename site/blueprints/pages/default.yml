@@ -6,39 +6,56 @@ status:
   draft: Brouillon
   listed: En ligne
 
-fields:
-  image_cover:
-    label: Image de couverture
-    type: files
-    uploads:
-      accept: image/*
-    max: 1
-    min: 0
-    layout: cards
-    image:
-      back: black
-    size: small
-    width: 1/2
-
-  show_title:
-    width: 1/2
-    label: Afficher le titre
-    type: toggle
-    default: false
-    text:
-      - non
-      - oui
+tabs:
   content:
     label: Contenu
-    type: blocks
-    fieldsets:
-      - text
-      - image
-      - gallery
-      - podcast
-      - video
-      - cards
-      - article_heading
-      - profiles
-      - map
-      - pages_list
+    fields:
+      caption:
+        label: En bref
+        type: writer
+        inline: true
+        marks:
+          - italic
+      image_cover:
+        label: Image de couverture
+        type: files
+        uploads:
+          accept: image/*
+        max: 1
+        min: 0
+        layout: cards
+        image:
+          back: black
+        size: small
+        width: 1/2
+
+      show_title:
+        width: 1/2
+        label: Afficher le titre
+        type: toggle
+        default: false
+        text:
+          - non
+          - oui
+      content:
+        label: Contenu
+        type: blocks
+        fieldsets:
+          - text
+          - image
+          - gallery
+          - podcast
+          - video
+          - cards
+          - article_heading
+          - profiles
+          - map
+          - pages_list
+  children:
+    label: Sous-pages
+    sections:
+      pages: 
+        layout: cards
+        image:
+          back: white
+        template: default

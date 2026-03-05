@@ -9,7 +9,6 @@ fields:
     inline: true
     marks:
       - italic
-
   image_cover:
     label: Image de couverture
     type: files
