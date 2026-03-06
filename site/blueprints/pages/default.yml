@@ -16,6 +16,8 @@ tabs:
         inline: true
         marks:
           - italic
+        maxlength: 200
+        help: Ne pas dépasser 200 caractères
       image_cover:
         label: Image de couverture
         type: files
