@@ -25,12 +25,14 @@ fields:
 
   tags:
     label: Type de projet
-    type: tags
-    options:
-      type: query
-      query: site.find('tags').children
-      value: "{{ page.title }}"
-    multiple: true
+    type: pages
+    query: site.find('tags').children
+    # options:
+    #   type: query
+    #   query: site.find('tags').children
+    #   value: "{{ page.slug }}"
+    #   text: "{{ page.title }}"
+    # multiple: true
     width: 1/2
 
 
