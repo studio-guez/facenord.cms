@@ -23,5 +23,14 @@ fields:
         marks:
           - italic
       baseline:
-        label: baseline
+        label: Baseline
         type: text
+      tag:
+        label: Tag correspondant
+        type: tags
+        max: 1
+        options:
+          type: query
+          query: site.find('tags').children
+          text: "{{page.title}}"
+          value: "{{page.slug}}"
