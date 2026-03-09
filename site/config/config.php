@@ -38,6 +38,13 @@ return [
 		'resolvers' => [
 			'text:titre' => $smart,
 			'text:text' => $smart,
+			'article_heading:titre' => $smart,
+			'cards:titre' => $smart,
+			'gallery:titre' => $smart,
+			'pages_list:titre' => $smart,
+			'podcast:titre' => $smart,
+			'video:titre' => $smart,
+			'profiles:titre' => $smart,
 			'profiles:profiles' => function (Field $field, Block $block) {
 					$structure = $field->toStructure();
 
