@@ -11,5 +11,16 @@ fields:
     type: pages
     query: site.index.filterBy('intendedTemplate', 'project')
     multiple: true
-    layout: list
+    layout: cards
+
+  link:
+    label: Lien
+    type: pages
+    multiple: false
+    query: site.index.filterBy('template', 'not in', ['tags', 'tag'])
+    width: 1/2
+  
+  link_label:
+    label: Texte du Lien
+    type: text
     width: 1/2

@@ -43,7 +43,7 @@ return [
 			'gallery:titre' => $smart,
 			'pages_list:titre' => $smart,
 			'podcast:titre' => $smart,
-			'video:titre' => $smart,
+			'video:titre' => $smart, 
 			'profiles:titre' => $smart,
 			'profiles:profiles' => function (Field $field, Block $block) {
 					$structure = $field->toStructure();
@@ -65,6 +65,9 @@ return [
 					];
 				})->values();
 			}
+		],
+		'pages' => [
+			'pages_list' => ['link']
 		],
 		'files' => [
 			'gallery' => ['images'],
