@@ -10,8 +10,8 @@ fields:
     label: style
     type: select
     options:
-      light: blanc
-      color: de couleur
+      light: Blanc
+      color: Couleur
   cards:
     label: Cards
     type: structure
