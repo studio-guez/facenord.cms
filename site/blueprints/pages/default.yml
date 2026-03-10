@@ -10,6 +10,14 @@ tabs:
   content:
     label: Contenu
     fields:
+      show_in_menu:
+        width: 1/3
+        label: Afficher la page dans le menu
+        type: toggle
+        default: false
+        text:
+          - non
+          - oui
       caption:
         label: En bref
         type: writer
@@ -39,6 +47,7 @@ tabs:
         text:
           - non
           - oui
+
       content:
         label: Contenu
         type: blocks

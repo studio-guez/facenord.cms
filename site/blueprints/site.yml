@@ -51,4 +51,25 @@ columns:
         image:
           back: white
           query: false
+  - width: 4/4
+    sections:
+      fields:
+        label: Pied de page
+        type: fields
+        fields:
+          headline:
+            type: headline
+            label: Pied de page
+          footer_address:
+            label: Adresse
+            type: writer
+            inline: true
+            marks:
+              - bold
+              - italic
+          footer_links:
+            label: Liens
+            type: pages
+            query: site.index.filterBy('template', 'not in', ['tags', 'tag'])
 
+        
