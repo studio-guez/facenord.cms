@@ -17,6 +17,13 @@ fields:
       back: black
     size: huge
     width: 1/2
+  full_width:
+    label: Pleine largeur
+    type: toggle
+    width: 1/2
+    text:
+      - "non"
+      - "oui"
   caption:
     label: Légende
     type: writer
