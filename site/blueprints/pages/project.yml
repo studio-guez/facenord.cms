@@ -60,8 +60,11 @@ columns:
         type: writer
         nodes:
           - paragraph
+          - heading
           - bulletList
           - orderedList
+        headings:
+          - 4
         marks:
           - bold
           - italic
