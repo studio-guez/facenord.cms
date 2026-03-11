@@ -7,17 +7,25 @@ fields:
     label: Titre
     type: text
   style:
-    label: style
+    label: Style
     type: select
     options:
       light: Blanc
       color: Couleur
+    width: 1/2
+  shuffle:
+    label: Ordre des cartes aléatoire
+    type: toggle
+    text:
+      - "non"
+      - "oui"
+    width: 1/2
   cards:
-    label: Cards
+    label: Cartes
     type: structure
     fields:
       text:
-        label: Text
+        label: Texte
         type: writer
         inline: true
         marks:
