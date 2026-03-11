@@ -2,63 +2,83 @@ title: Project
 options:
   preview: "https://facenord.max-esnee.com/projets/{{page.slug}}"
 
-fields:
-  caption:
-    label: En bref
-    type: writer
-    inline: true
-    marks:
-      - italic
-    maxlength: 200
-    help: Ne pas dépasser 200 caractères
-  image_cover:
-    label: Image de couverture
-    type: files
-    uploads:
-      accept: image/*
-    max: 1
-    min: 1
-    required: true
-    layout: cards
-    image:
-      back: black
-    size: huge
-    width: 1/2
+columns:
+  - width: 1/1
+    fields:
+      caption:
+        label: En bref
+        type: writer
+        inline: true
+        marks:
+          - italic
+        maxlength: 200
+        help: Ne pas dépasser 200 caractères
 
-  tags:
-    label: Type de projet
-    type: pages
-    query: site.find('tags').children
-    width: 1/2
+  - width: 1/2
+    fields:
+      image_cover:
+        label: Image de couverture
+        type: files
+        uploads:
+          accept: image/*
+        max: 1
+        min: 1
+        required: true
+        layout: cards
+        image:
+          back: black
+        size: huge
 
+  - width: 1/2
+    fields:
+      tags:
+        label: Type de projet
+        type: pages
+        query: site.find('tags').children
 
-  intention:
-    label: Intention
-    type: list
+      current:
+        type: toggles
+        label: Status du projet
+        options:
+          - value: current
+            text: En cours
+          - value: done
+            text: Terminé
+      
+      date:
+        label: Dates
+        type: text
 
-  description:
-    label: Description
-    type: writer
-    nodes:
-      - paragraph
-      - bulletList
-      - orderedList
-    marks:
-      - bold
-      - italic
-      - link
-  content:
-    label: Contenu
-    type: blocks
-    fieldsets:
-      - text
-      - image
-      - gallery
-      - podcast
-      - video
-      - cards
-      - article_heading
-      - profiles
-      - map
-      - pages_list
-      - divider
+  - width: 1/1
+    fields:
+      intention:
+        label: Intention
+        type: list
+
+      description:
+        label: Description
+        type: writer
+        nodes:
+          - paragraph
+          - bulletList
+          - orderedList
+        marks:
+          - bold
+          - italic
+          - link
+
+      content:
+        label: Contenu
+        type: blocks
+        fieldsets:
+          - text
+          - image
+          - gallery
+          - podcast
+          - video
+          - cards
+          - article_heading
+          - profiles
+          - map
+          - pages_list
+          - divider
