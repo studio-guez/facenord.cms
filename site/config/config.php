@@ -48,12 +48,23 @@ return [
             'system'
         ]
     ],
+	 'thumbs' => [
+        'srcsets' => [
+            'default' => [
+                '1080w'  => ['width' => 1080],
+                '1400w'  => ['width' => 1400],
+                '1920w'  => ['width' => 1920],
+                '2560w' => ['width' => 2560],
+                '3840w' => ['width' => 3840]
+            ]
+        ]
+    ],
 	'blocksResolver' => [
 		'defaultResolvers' => [
 			'files' => fn (\Kirby\Cms\File $file) => [
-				'url' => $file->url(),
-				'width' => $file->width(),
-				'height' => $file->height(),
+				'url' => $file->resize(3840)->url(),
+				'width' => $file->resize(3840)->width(),
+				'height' => $file->resize(3840)->height(),
 				'srcset' => $file->srcset(),
 				'alt' => $file->alt()->value(),
 				'focus' =>$file->focus()->value()
