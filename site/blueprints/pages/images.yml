@@ -1,0 +1,16 @@
+title: Images
+
+sections:
+  fields:
+    type: fields
+    fields:
+      info:
+        label: false
+        text: Compositions de formes à utiliser lorsque l'iconographie est manquante
+  images:
+    label: Images
+    type: files
+    layout: cards
+    image:
+      ratio: 16/9
+      cover: true

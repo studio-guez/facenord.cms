@@ -28,6 +28,7 @@ columns:
         image:
           back: black
         size: huge
+        query: site.find('images')
 
   - width: 1/2
     fields:

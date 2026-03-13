@@ -38,6 +38,7 @@ tabs:
           back: black
         size: small
         width: 1/2
+        query: site.find('images')
 
       show_title:
         width: 1/2

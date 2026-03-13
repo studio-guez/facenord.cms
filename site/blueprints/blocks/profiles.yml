@@ -23,6 +23,7 @@ fields:
         size: huge
         width: 1/2
         layout: cards
+        query: site.find('images')
       name:
         label: Nom
         type: text

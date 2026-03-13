@@ -24,6 +24,30 @@ return [
 			}
 		],
 	],
+	'panel' => [
+        'menu' => [
+            'site' => [
+                'current' => function(string $current): bool {
+                    $links = ['pages/images'];
+                    $path  = Kirby\Cms\App::instance()->path();
+
+                    return $current === 'site' && A::every($links, fn($link) => Str::contains($path, $link) === false);
+                }
+            ],
+            'images' => [
+                'icon' => 'image',
+                'label' => 'Images',
+                'link' => 'pages/images',
+                'current' => function(string $current): bool {
+                    $path = Kirby\CMS\App::instance()->path();
+                    return Str::contains($path, 'pages/images');
+                }
+            ],
+            '-',
+            'users',
+            'system'
+        ]
+    ],
 	'blocksResolver' => [
 		'defaultResolvers' => [
 			'files' => fn (\Kirby\Cms\File $file) => [
