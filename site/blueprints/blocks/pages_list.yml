@@ -12,6 +12,7 @@ fields:
     query: site.index.filterBy('intendedTemplate', 'project')
     multiple: true
     layout: cards
+    image: page.image_cover.toFile
 
   link:
     label: Lien
