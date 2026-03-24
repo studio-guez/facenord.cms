@@ -67,6 +67,9 @@ columns:
             marks:
               - bold
               - italic
+          footer_email:
+            label: Adresse Email
+            type: email
           footer_links:
             label: Liens
             type: pages
